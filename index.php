@@ -6,23 +6,16 @@
 </head>
 <body>
   <?php
-  $age = 25;
-  $genre = 'homme';
-  function majorOrMinor($age, $genre) {
-    if ($age >= 18 && $genre == 'homme') {
-      return ('Vous êtes un homme et vous êtes majeur');
-    }
-    elseif ($age < 18 && $genre == 'homme') {
-      return ('Vous êtes un homme et vous êtes mineur');
-    }
-    elseif ($age < 18 && $genre == 'femme') {
-      return ('Vous êtes une femme et vous êtes mineur');
-    }
-    elseif ($age >= 18 && $genre == 'femme') {
-      return ('Vous êtes une femme et vous êtes majeur');
-    }
-  }
-  echo majorOrMinor($age, $genre);
+  $hautsDeFrance = array (
+    '59' => 'Nord',
+    '62' => 'Pas-de-Calais',
+    '80' => 'Somme',
+    '60' => 'Oise',
+    '02' => 'Aisne'
+  );
+  $hautsDeFrance[51] = 'Marne';
+  print_r($hautsDeFrance);
+   ?>
   ?>
 </body>
 </html>
